@@ -1,0 +1,19 @@
+server:
+  port: 8088
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/pages/
+      suffix: .jsp
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: scott
+    password: tiger
+
+
+mybatis:
+  mapper-locations: classpath:com/orange/mapper/*.xml
+  type-aliases-package: com.orange.model
+
